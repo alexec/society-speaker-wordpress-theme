@@ -5,18 +5,16 @@
 	/*-----------------------------------------------------------------------------------*/
 ?>
 
-</div><!-- / end page container, begun in the header -->
+   <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    The information on this website is for the sole use of Toastmasters' members, for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information. All rights reserved. Toastmasters International, the Toastmasters International logo and all other Toastmasters International trademarks and copyrights are the sole property of Toastmasters International and may be used only by permission.
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<footer class="site-footer" role="contentinfo">
-	<div class="site-info container">
-		
-		<p>Birthed <a href="http://bckmn.com/naked-wordpress" rel="theme">Naked</a> 
-			on <a href="http://wordpress.org" rel="generator">Wordpress</a> 
-			by <a href="http://bckmn.com" rel="designer">Joshua Beckman</a>
-		</p>
-		
-	</div><!-- .site-info -->
-</footer><!-- #colophon .site-footer -->
 
 <?php wp_footer(); 
 // This fxn allows plugins to insert themselves/scripts/css/files (right here) into the footer of your website. 
