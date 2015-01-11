@@ -85,7 +85,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" >
+                <a class="navbar-brand" href="<?php echo home_url(); ?>" >
                     <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" />Society Speakers</a>
             </div>
 
