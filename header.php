@@ -85,22 +85,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo home_url(); ?>" >
+                <a class="navbar-brand" href="index.html" >
                     <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" />Society Speakers</a>
             </div>
-            <?php
-                wp_nav_menu( array(
-                    'menu'              => 'primary',
-                    'theme_location'    => 'primary',
-                    'depth'             => 1,
-                    'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse',
-                    'container_id'      => 'bs-example-navbar-collapse-1',
-                    'menu_class'        => 'nav navbar-nav',
-                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                    'walker'            => new wp_bootstrap_navwalker())
-                );
-            ?>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
+            </div>
         </div>
     </nav>
 
