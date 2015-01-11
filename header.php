@@ -20,11 +20,6 @@
 	// I would load them with an @import call in your style.css
 ?>
 
-<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-
 <?php wp_head(); 
 // This fxn allows plugins, and Wordpress itself, to insert themselves/scripts/css/files
 // (right here) into the head of your website. 
@@ -37,7 +32,7 @@
         body {margin-top:50px;font-family: helvetica, sans-serif;}
 
         nav,footer {background-color: #233140 !important}
-        nav .nav-social a {padding: 7.5px !important}
+        nav .has-image a {padding: 7.5px !important}
         nav .navbar-brand > img {display: inline; margin-right: 10px}
         nav img {width:36px;height:36px;}
 
@@ -51,12 +46,6 @@
             vertical-align: middle;
             line-height: 320px;
               text-align: center;
-        }
-        section#photos h2 {
-              display: inline-block;
-              vertical-align: middle;
-              line-height: normal;  
-            color: #fff;
         }
 
         section#meetings {background-color: #9f0a10;}
